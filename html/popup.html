@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PostUrlSaver</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/popup.css">
+    </head>
+    <body>
+        <div class="container">
+            <h3>保存したURL - Saved URL</h3>
+            <div id="url-list-container">
+                <p id="empty-message">まだURLは保存されていません。</p>
+                <ul id="url-list"></ul>
+            </div>
+            <div class="button-group">
+                <button id="download-btn">JSONをダウンロード</button>
+                <button id="clear-btn">すべてクリア</button>
+            </div>
+            <div class="settings-container">
+                <h2>設定 - Config</h2>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="saveToStorage">
+                        URLをストレージに保存する
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="copyToClipboard">
+                        URLをクリップボードにコピーする
+                    </label>
+                </div>
+                <h3 class="setting-subheader">自動アクション - Auto Actions</h3>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="autoSaveEnabled">
+                        特定のアカウントのポストを自動保存する
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label for="autoSaveAccounts">対象アカウント（@は含めず、カンマ区切り）</label>
+                    <input type="text" id="autoSaveAccounts" class="text-input">
+                </div>
+            </div>
+        </div>
+        <script src="../js/popup.js"></script>
+    </body>
+</html>

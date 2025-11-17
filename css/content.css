@@ -1,0 +1,23 @@
+.save-url-button {
+  margin-left: 12px;
+  padding: 6px 8px;
+  border: 1px solid #1a8cd8;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #1a8cd8;
+  color: #ffffffff;
+  font-weight: bold;
+  font-size: 13px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.save-url-button:hover:not(:disabled) {
+  background-color: #1a7dbfff;
+}
+
+.save-url-button:disabled {
+  background-color: #1a7dbfff;
+  cursor: default;
+  color: #cdcdcdff;
+  opacity: 0.7;
+}

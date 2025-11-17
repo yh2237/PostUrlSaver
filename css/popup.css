@@ -1,0 +1,177 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+  width: 550px;
+  margin: 0;
+  padding: 10px;
+  background-color: #f0f2f5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+}
+
+h1 {
+  font-size: 18px;
+  color: #1c1e21;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+#url-list-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  min-height: 100px;
+}
+
+#empty-message {
+  color: #606770;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#url-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#url-list li {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+#url-list li:last-child {
+  border-bottom: none;
+}
+
+#url-list a {
+  flex: 8;
+  word-break: break-all;
+  gap: 10px;
+  text-decoration: none;
+  color: #0062cc;
+  word-break: break-all;
+}
+
+#url-list a:hover {
+  text-decoration: underline;
+}
+
+.delete-btn {
+  flex: 2;
+  width: auto;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e4e6e9;
+  border-color: #b0b3b8;
+  background-color: #c82333;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+button {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#download-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+#download-btn:hover {
+  background-color: #0056b3;
+}
+
+#clear-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+#clear-btn:hover {
+  background-color: #c82333;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.settings-container {
+  margin-top: 15px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.settings-container h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #1c1e21;
+}
+
+.setting-item {
+  margin-bottom: 10px;
+}
+
+.setting-item label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.setting-item label[for='autoSaveAccounts'] {
+  display: block;
+  margin-bottom: 5px;
+  color: #606770;
+  font-weight: bold;
+}
+
+.setting-subheader {
+  font-size: 15px;
+  color: #1c1e21;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.text-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
