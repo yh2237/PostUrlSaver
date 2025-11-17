@@ -1,4 +1,4 @@
-# PostUrlSaver
+# PostUrlSaver (プレリリース)
 
 X（旧Twitter）のTLからポストのURLを簡単にコピー、保存するためのChrome拡張機能
 
